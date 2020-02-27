@@ -3,5 +3,5 @@
 
 --- 
 ## Design Docs
-[MVPs]() · [Schema](https://github.com/helloitsnaveen/coda/wiki/schema) · [Sample State](https://github.com/helloitsnaveen/coda/wiki/sample-state) · [Frontend]() · [Backend]()
+[MVPs](https://github.com/helloitsnaveen/coda/wiki/mvp-list) · [Schema](https://github.com/helloitsnaveen/coda/wiki/schema) · [Sample State](https://github.com/helloitsnaveen/coda/wiki/sample-state) · [Frontend]() · [Backend]()
 
