@@ -9,14 +9,10 @@ import SignupFormContainer from "./session/signup_form_container";
 
 
 const App = () => (
-    <div>
-        <header>
-            <h1>Coda</h1>
-            <GreetingContainer />
-        </header>
-
-        <Route path="/login" component={LoginFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} />
+    <div className='App-main-div'>
+        <Route exact path="/" component={GreetingContainer} />
+        <Route exact path="/login" component={LoginFormContainer} />
+        <Route exact path="/signup" component={SignupFormContainer} />
     </div>
 );
 

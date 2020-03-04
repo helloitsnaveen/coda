@@ -25,19 +25,19 @@ export const login = user => dispatch => {
     return (
     SessionApiUtil.login(user)
         .then(user => dispatch(receieveCurrentUser(user)))
-        // .fail(err => dispatch(receieveErrors(err.responseJSON))) // to render as JSON
+        .fail(err => dispatch(receieveErrors(err.responseJSON))) // to render as JSON
 )};
 
 export const logout = () => dispatch => (
     SessionApiUtil.logout()
         .then(() => dispatch(logoutCurrentUser()))
-        // .fail(err => dispatch(receieveErrors(err.responseJSON))) 
+        .fail(err => dispatch(receieveErrors(err.responseJSON))) 
 );
 
 export const signup = user => dispatch => (
     SessionApiUtil.signup(user)
         .then(user => dispatch(receieveCurrentUser(user)))
-        // .fail(err => dispatch(receieveErrors(err.responseJSON)))
+        .fail(err => dispatch(receieveErrors(err.responseJSON)))
 );
 
 
