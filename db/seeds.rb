@@ -21,3 +21,10 @@ testsong2 = Song.create!(title: 'testsong2', description: 'this is the descripti
 decline = Song.create!(title: 'decline', description: 'decline, by almost there.', artist_id: almostwhere.id)
 thewaterbottlesong = Song.create!(title: 'the water bottle song', description: 'this is the water bottle song', artist_id: waterbottlemusic.id)
 thechipsanddipsong = Song.create!(title: 'the chips and dip song', description: 'this is the chips and dip song', artist_id: chipsanddip.id)
+
+## demo user ! ## 
+demo_user = User.create!(username: 'demoUser', email: 'demouser@mail.com', password: 'demouserpw')
+
+demo_user1song = Song.create!(title: 'apples and oranges!', description: 'this is the demo users first song', artist_id: demo_user.id)
+demo_user2song = Song.create!(title: 'headphone boy!', description: 'this is the demo users second song, ya!', artist_id: demo_user.id)
+demo_user3song = Song.create!(title: 'coding gurl!', description: 'demo user song 3 u know how it be', artist_id: demo_user.id)
