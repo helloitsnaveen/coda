@@ -96,9 +96,9 @@ class SessionForm extends React.Component {
                 </form>
 
                 {this.props.formType === 'login' ?
-                    <img src="assets/svgassets/undraw_listening_1u79.svg" className="login-image" />
+                    <img src={loginImage} className="login-image" />
                 :
-                    <img src="assets/svgassets/undraw_compose_music_ovo2.svg" className="signup-image" />
+                    <img src={signupImage} className="signup-image" />
                 }
             </div>
         )

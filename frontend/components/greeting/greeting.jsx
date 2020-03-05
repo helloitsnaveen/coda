@@ -18,7 +18,7 @@ const Greeting = props => {
                 <h4 className='App-main-tagline'>music by <span className='you'>you</span>, for <span className='you'>you</span>.</h4>
                 {/* <GreetingContainer className='App-main-greeting-container' /> */}
             </header>
-            <img className='logo' src="/assets/logos/coda1.svg" />
+            {/* <img className='logo' src="/assets/logos/coda1.svg" /> */}
             <div className="user-greeting-session-links">
                 <NavLink className="user-greeting-login-link" activeClassName="active-user-greeting-login-link" exact to="/login">login</NavLink>
                 <NavLink className="user-greeting-signup-link" activeClassName="active-user-greeting-login-link" exact to="/signup">signup</NavLink>
@@ -27,8 +27,8 @@ const Greeting = props => {
                 <h3 className='splash-art-text'>never stop listening.</h3>
                 <Link to="/login" className='splash-art-link'>login to continue</Link>
                 {/* <p className='splash-art-words'>signup or login to listen to your favorite tunes</p> */}
-                <img className='modern-life-image' src="/assets/svgassets/undraw_walk_in_the_city_1ma6.svg" />
-                
+                {/* <img className='modern-life-image' src="/assets/svgassets/undraw_walk_in_the_city_1ma6.svg" /> */}
+                <img src={window.splashImage} />;
             </div>
 
         </div>
