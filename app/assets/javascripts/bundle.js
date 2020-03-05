@@ -417,7 +417,9 @@ var Greeting = function Greeting(props) {
       className: "session-links-div-main"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
       className: "App-main-header"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      exact: true,
+      to: "/",
       className: "App-main-title"
     }, "coda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       className: "App-main-tagline"
@@ -438,14 +440,17 @@ var Greeting = function Greeting(props) {
       exact: true,
       to: "/signup"
     }, "signup"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      className: "user-greeting-demouser"
+      className: "user-greeting-demouser",
+      onClick: demoUserLogin
     }, "demo user")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "splash-art-div"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "splash-art-text-one"
     }, "never stop listening.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "splash-art-text-two"
-    }, "music on ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "splash-art-yours"
+    }, "your"), " music on ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "splash-art-yours"
     }, "your"), " terms."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       className: "splash-image",
@@ -657,14 +662,16 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "session-form-div"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        exact: true,
+        to: "/",
         className: "App-main-title"
       }, "coda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         className: "App-main-tagline"
       }, "music by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "you"
+        className: "App-tagline-you"
       }, "you"), ", for ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "you"
+        className: "App-tagline-you"
       }, "you"), "."), this.props.formType === 'login' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-visual-div"
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -693,7 +700,7 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       }, this.props.formType), " to your account") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "signin-title"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "signin-word"
+        className: "signup-word"
       }, this.props.formType), " for an account"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "session-username-label"
       }, "username", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {

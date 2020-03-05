@@ -1,9 +1,238 @@
 // updated css for session form 
 
+// top titles
+
 .session-form-div {
-    display: flex; 
-    margin: auto; 
-    width: 30vh; 
-    top: 20vh;
-    left: 2vh;
+    display: flex;
+    margin: auto;
+    width: 30%;
+
+    position: fixed;
+    top: 20%;
+    left: 2%
+};
+
+.signin-word, .signup-word {
+    color: #ff5500;
+};
+
+.signin-title {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+
+    animation: basic_fade 1s forwards;
+};
+
+.session-signupinstead-link-div {
+    color: grey;
+    text-decoration: none;
+
+    display: flex;
+
+    position: fixed;
+    top: 20.5%;
+    left: 15.4%;
+};
+
+.session-form-signup-link {
+    font-family: 'Spartan';
+    text-decoration: none;
+    color: lightgray;
+    font-size: 15px;
+
+    background-color: black;
+    margin-right: 15px;
+    margin-top: 25px;
+
+    animation: basic_fade 1s forwards;
+    transition-duration: 0.5s;
+};
+
+.session-form-signup-link:hover {
+    color: #ff5500;
+}; 
+
+.session-logininstead-link-div {
+    color: grey;
+    text-decoration: none;
+
+    display: flex;
+
+    position: fixed;
+    top: 20.5%;
+    left: 16.6%;
+};
+
+.session-form-login-link {
+    font-family: 'Spartan';
+    text-decoration: none;
+    color: lightgray;
+    font-size: 15px;
+
+    background-color: black;
+    margin-right: 15px;
+    margin-top: 25px;
+
+    animation: basic_fade 1s forwards;
+    transition-duration: 0.5s;
+};
+
+.session-form-login-link:hover {
+    color: #ff5500;
+};
+
+.session-username-label {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 20px;
+
+    text-align: right;
+    padding-left: 66.5%;
+
+    animation: basic_fade 1s forwards;
+}; 
+
+.session-password-label {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 20px;
+
+    padding-left: 66.5%;
+
+    animation: basic_fade 1s forwards;
+};
+
+.session-email-label {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 20px;
+
+    text-align: right;
+    padding-left: 66.5%;
+
+    animation: basic_fade 1s forwards;
+}; 
+
+input[type=text], input[type=password] {
+    display: inline-block;
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    outline: none;
+
+    animation: basic_fade 1s forwards;
+}; 
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid #ff5500;
+};
+
+.login-image {
+    position: fixed;
+    right: 4%;
+    bottom: -1%;
+
+    height: 400px;
+    width: 400px;
+
+    opacity: 40%;
+
+    animation: basic_fade 7s forwards;
+};
+
+.signup-image {
+    position: fixed;
+    right: 4%;
+    bottom: -1%;
+
+    height: 400px;
+    width: 400px;
+
+    opacity: 40%;
+
+    animation: basic_fade 7s forwards;
+};
+
+.login-visual-div {
+    background-color: white;
+
+    position: fixed;
+    top: 10%;
+
+    animation: login-signup-visual-div 17s forwards;
+};
+
+.signup-visual-div {
+    background-color: #ff5500;
+
+    position: fixed;
+    bottom: 10%;
+
+    animation: login-signup-visual-div 17s forwards;
+};
+
+.session-form-button {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 20px;
+
+    margin-right: 15px;
+    margin-top: 25px;
+    padding: 6px;
+    border-radius: 3px;
+
+    background-color: black;
+    border: 1px solid whitesmoke;
+
+    transition-duration: 0.5s;
+    animation: basic_fade 8s forwards;
+};
+
+.session-form-button:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: #ff5500;
+};
+
+// animations 
+
+@keyframes basic_fade {
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+    0% {translateY: (-10%)}
+    100% {translateY: (0%)}
+};
+
+@keyframes login-signup-visual-div {
+    0% {background-color: white}
+    20% {background-color: #ff5500}
+    100% {background-color: #ff5500}
+
+    0% {opacity: 30%}
+    25% {opacity: 100%}
+    100% {opacity: 100%;}
+
+    0% {transform: translateX(180%)}
+    15% {transform: translateX(480%)}
+    100% {transform: translateX(480%)}
+
+    0% {height: 16%}
+    20% {height: 16%}
+    35% {height: 105%}
+    100% {height: 105%}
+
+    0% {width: 60%}
+    20% {width: 15%}
+    100% {width: 15%}
+
+    0% {border-radius: 0%}
+    20% {border-radius: 0%}
+    50% {border-radius: 4%}
+    100% {border-radius: 4%}
 }

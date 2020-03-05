@@ -30,8 +30,10 @@ class SessionForm extends React.Component {
     render() {
         return (
             <div className="session-form-div">
-                <h1 className='App-main-title'>coda</h1>
-                <h4 className='App-main-tagline'>music by <span className='you'>you</span>, for <span className='you'>you</span>.</h4>
+
+                <Link exact to="/" className='App-main-title'>coda</Link>
+                <h4 className='App-main-tagline'>music by <span className='App-tagline-you'>you</span>, for <span className='App-tagline-you'>you</span>.</h4>
+
                 {this.props.formType === 'login' ?
                     <div className='login-visual-div'></div>
                 :
@@ -56,7 +58,7 @@ class SessionForm extends React.Component {
                         </p>
                     :
                         <p className='signin-title'>
-                            <span className='signin-word'>{this.props.formType}</span> for an account
+                            <span className='signup-word'>{this.props.formType}</span> for an account
                         </p>
                     }
 

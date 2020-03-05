@@ -20,12 +20,18 @@ html {color: white}
     color: white;
     font-size: 70px;
     font-weight: bold;
+    text-decoration: none;
 
     position: fixed;
     bottom: 4%; 
     left: 1.5%;
 
-    animation: main_coda 3s forwards;
+    transition-duration: 1s;
+    animation: main_coda 2s;
+};
+
+.App-main-title:hover {
+    color: #ff5500
 };
 
 .App-main-tagline {
@@ -76,7 +82,7 @@ html {color: white}
 .splash-art-text-two {
     font-family: 'Spartan';
     color: #ff5500; 
-    font-size: 85px; 
+    font-size: 78px; 
     font-weight: bold;
     white-space: nowrap;
     // white-space: pre-wrap;
@@ -84,7 +90,7 @@ html {color: white}
     position: fixed;
     top: 17.5%;
     // left: 33.25%;
-    left: 43%;
+    left: 35%;
 
     animation: splash-art-text-two 14s forwards;
 };
