@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-
-
+    ### MVP2 SONGS ###
+    has_many :songs, foreign_key: :artist_id, class_name: "Song"
 
 
     ### User Authentication ### 
