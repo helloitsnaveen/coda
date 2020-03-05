@@ -1,0 +1,301 @@
+// updated splash css
+
+html {background-color: black}
+html {color: white}
+
+.session-links-div-main {
+    // display: flex;
+    width: 100vh;
+    height: 100vh;
+};
+
+// header TITLE and TAGLINE //
+
+.App-main-header {
+    display: flex;
+};
+
+.App-main-title {
+    font-family: 'Spartan'; 
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+
+    position: fixed;
+    bottom: 4%; 
+    left: 1.5%;
+
+    animation: main_coda 3s forwards;
+};
+
+.App-main-tagline {
+    font-family: 'Spartan';
+    color: white; 
+    font-size: 20px;
+    font-weight: bold;
+
+    position: fixed;
+    bottom: 1.6%; 
+    left: 1.6%;
+
+    animation: main_tagline 5s forwards;
+};
+
+.App-tagline-you {
+    color: #ff5500
+};
+
+// animated splash DIV, IMAGE and TEXT // 
+
+.splash-art-div {
+    background-color: white;
+
+    display: flex;
+    position: fixed; 
+    top: 10%; 
+
+    animation: splash_art_div 14s forwards;
+};
+
+.splash-art-text-one {
+    font-family: 'Spartan'; 
+    color: white;
+    font-size: 95px;
+    white-space: nowrap;
+    font-weight: bold;
+
+    position: fixed; 
+    left: 0.4%;
+    // top: 65%;
+    bottom: -25%;
+    // width: 100vh;
+
+    animation: splash-art-text-one 14s forwards;
+};
+
+.splash-art-text-two {
+    font-family: 'Spartan';
+    color: #ff5500; 
+    font-size: 85px; 
+    font-weight: bold;
+    white-space: nowrap;
+    // white-space: pre-wrap;
+
+    position: fixed;
+    top: 17.5%;
+    // left: 33.25%;
+    left: 43%;
+
+    animation: splash-art-text-two 14s forwards;
+};
+
+.splash-art-yours {
+    animation: splash-art-yours 4s forwards;
+    animation-delay: 6s;
+};
+
+.splash-image {
+    opacity: 50%; 
+    position: absolute; 
+    left: 12%;
+    top: 18%;
+    position: fixed; 
+    animation: splash-image 12s forwards;
+};
+
+.splash-art-link {
+    font-family: 'Spartan';
+    font-size: 40px;
+    color: black;
+    white-space: nowrap;
+
+    position: fixed; 
+    right: 3%;
+    bottom: 9.4%;
+
+    animation: splash-art-link 3s forwards;
+    animation-delay: 7s;
+
+    transition-duration: 0.9s;
+};
+
+.splash-art-link:hover {
+    color: #ff5500
+};
+
+// session links // 
+
+.user-greeting-session-links {
+    background-color: black;
+
+    display: flex; 
+    position: fixed; 
+    top: 2%; 
+    right: 5%; 
+    text-decoration: none;
+    list-style-type: none;
+}; 
+
+.user-greeting-login-link {
+    font-family: 'Spartan';
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+    background-color: black;
+    margin-right: 15px;
+    margin-top: 25px;
+
+    animation: basic-fade 3s;
+    transition-duration: 0.8s;
+};
+
+.user-greeting-login-link:hover {
+    color: #ff5500;
+};
+
+.user-greeting-signup-link {
+    font-family: 'Spartan';
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+    background-color: black;
+    margin-right: 15px;
+    margin-top: 25px;
+
+    animation: basic-fade 3s;
+    transition-duration: 0.8s;
+};
+
+.user-greeting-signup-link:hover {
+    color: #ff5500;
+};
+
+.user-greeting-demouser {
+    font-family: 'Spartan';
+    color: white;
+    font-size: 20px;
+
+    background-color: black;
+    border: 1px solid whitesmoke;
+
+    position: fixed;
+    margin-right: 40px;
+    margin-top: 20.4px;
+    right: 13.6%;
+
+    transition-duration: 0.5s;
+    animation: main_coda 3s forwards;
+};
+
+.user-greeting-demouser:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: #ff5500;
+};
+
+// animation // 
+
+@keyframes main_coda {
+    0% {color: grey}
+    100% {color: white}
+
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+
+    0% {transform: translateY(60%)}
+    100% {transform: translateX(0);}
+};
+
+@keyframes main_tagline {
+    0% {opacity: 0%}
+    25% {opacity: 0%}
+    100% {opacity: 100%}
+};
+
+@keyframes splash_art_div {
+    0% {background-color: white}
+    30% {background-color: #ff5500}
+    100% {background-color: #ff5500}
+
+    0% {opacity: 30%}
+    50% {opacity: 100%}
+    100% {opacity: 100%}
+
+    0% {transform: translateX(-80%)}
+    27% {transform: translateX(50%)}
+    100% {transform: translateX(50%)}
+
+    0% {height: 16%}
+    27% {height: 16%}
+    70% {height: 79%}
+    100% {height: 79%}
+
+    0% {width: 10%}
+    18% {width: 66%}
+    100% {width: 66%}
+};
+
+@keyframes splash-art-text-one {
+    0% {opacity: 0%}
+    31% {opacity: 100%}
+    100% {opacity: 100%}
+
+    0% {color: white}
+    10% {color: white}
+    25% {color: white}
+    35% {color: black}
+    100% {color: black}
+
+};
+
+@keyframes splash-art-text-two {
+    0% {opacity: 0%}
+    30% {opacity: 0%}
+    35% {opacity: 90%}
+    100% {opacity: 90%}
+
+    0% {color: #ff5500}
+    25% {color: #ff5500}
+    100% {color: black}
+};
+
+@keyframes splash-art-yours {
+    100% {color: white}
+};
+
+@keyframes splash-image {
+    0% {opacity: 0%}
+
+    57% {opacity: 35%}
+    65% {opacity: 42%}
+    100% {opacity: 42%}
+
+    // 0% {transform: translateX(-80%)}
+    // 28% {transform: translateX(45%)}
+    // 100% {transform: translateX(45%)}
+    0% {transform: translateX(-70%)}
+    28% {transform: translateX(48%)}
+    100% {transform: translateX(48%)}
+};
+
+@keyframes splash-art-link {
+    0% {opacity: 0%}
+    30% {opacity: 0%}
+    70% {opacity: 90%}
+    100% {opacity: 100%}
+
+    0% {color: black}
+    15% {color: black}
+    60% {color: white}
+    100% {color: white}
+};
+
+@keyframes basic-fade {
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+
+    0% {transform: translateY(60%)}
+    100% {transform: translateX(0);}
+};

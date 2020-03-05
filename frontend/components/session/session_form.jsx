@@ -7,7 +7,7 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             username: '',
-            password: '', 
+            password: '',
             email: ''
         };
 
@@ -47,7 +47,7 @@ class SessionForm extends React.Component {
                         <NavLink className="session-form-login-link" exact to="/login">login <span>instead</span></NavLink>
                     </div>
                 }
-                
+
                 <div className='login-visual-div-2'></div>
                 <form className='session-form-form' onSubmit={this.handleSubmit}>
                     {this.props.formType === 'login' ?
@@ -63,7 +63,7 @@ class SessionForm extends React.Component {
 
                     <br/>
                     {/* <p className="session-other-action">{this.props.otherAction}</p> */}
-                    <br/> 
+                    <br/>
                     <label className="session-username-label">username
                         <br/>
                         <input type="text"
@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
                         />
                     </label>
                     <br/>
-                    {this.props.formType === 'signup' ? 
+                    {this.props.formType === 'signup' ?
                         <label className="session-email-label">email
                             <input className="session-email-input"
                             type="text"
@@ -111,9 +111,3 @@ export default SessionForm;
 
 {/* <NavLink className="user-greeting-login-link" activeClassName="active-user-greeting-login-link" exact to="/login">login</NavLink> */}
 {/* <NavLink className="user-greeting-signup-link" activeClassName="active-user-greeting-login-link" exact to="/signup">signup</NavLink>  */}
-
-
-
-
-
-
