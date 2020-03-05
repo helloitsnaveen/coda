@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <% if logged_in? %>
+        <script type="text/javascript">
+            window.currentUser = <%= render(
+                "api/users/user.json.jbuilder",
+                user: current_user
+            ).html_safe %>
+        </script>
+    <% end %>
+
+
+    <title>CODA</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan|Space+Mono|Muli|Josefin+Sans">
+</head>
+<body>
+    <main id='root'>not REACTive!</main>
+
+</body>
+</html>
