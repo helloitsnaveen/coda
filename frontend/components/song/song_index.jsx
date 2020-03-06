@@ -17,7 +17,11 @@ class SongIndex extends React.Component {
         const { songs, deleteSong } = this.props; 
 
         return (
-            <div>
+            
+            <div className='song-index-div'>
+                <Link exact to="/" className='App-main-title'>coda</Link>
+                <h4 className='App-main-tagline'>music by <span className='App-tagline-you'>you</span>, for <span className='App-tagline-you'>you</span>.</h4>
+                
                 <ul>
                     {
                         songs.map(song => (

@@ -850,7 +850,19 @@ var SongIndex = /*#__PURE__*/function (_React$Component) {
       var _this$props = this.props,
           songs = _this$props.songs,
           deleteSong = _this$props.deleteSong;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, songs.map(function (song) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "song-index-div"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        exact: true,
+        to: "/",
+        className: "App-main-title"
+      }, "coda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "App-main-tagline"
+      }, "music by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "App-tagline-you"
+      }, "you"), ", for ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "App-tagline-you"
+      }, "you"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, songs.map(function (song) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_song_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
           song: song,
           deleteSong: deleteSong,
@@ -922,12 +934,56 @@ __webpack_require__.r(__webpack_exports__);
 
 var SongIndexItem = function SongIndexItem(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "song-index-item-div"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, props.song.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: function onClick() {
-      return props.deleteSong(props.song.id);
-    }
-  }, "delete")));
+    className: "song-index-item-outer-div"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-image"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-rest"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-title-and-duration"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-duration-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "song-index-item-duration"
+  }, "3min 32sec")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-title-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "song-index-item-title"
+  }, props.song.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-like-and-play"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-like-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "song-index-item-like"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "aria-hidden": "true",
+    focusable: "false",
+    "data-prefix": "fas",
+    "data-icon": "heart",
+    className: "like-icon",
+    role: "img",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 512 512"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: "currentColor",
+    d: "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-play-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "song-index-item-play"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    "aria-hidden": "true",
+    focusable: "false",
+    "data-prefix": "fas",
+    "data-icon": "play",
+    className: "play-icon",
+    role: "img",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 448 512"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: "currentColor",
+    d: "M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+  }))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SongIndexItem);
