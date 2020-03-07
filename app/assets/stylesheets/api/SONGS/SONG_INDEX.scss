@@ -1,6 +1,210 @@
+.entire-song-index-div {
+    display: flex;
+    position: relative;
+};
+
+// just song index //
 .song-index-div {
     display: flex;
+    overflow: visible;
+
+    transform:scale(0.8);
+
+    position: relative;
+    right: 2%;
+
+    border: 1px solid white;
+};
+
+.song-index-visual-divs-container {
+    display: flex; 
+
+    position: relative; 
+    left: 50%;
+}; 
+
+// scrollbar //
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    padding-top: 80px;
+};
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+};
+
+::-webkit-scrollbar-thumb {
+    background: #464646;
+    border-radius:10px;
+    height: 10px;
+    width: 5px;   
+
+    transition-duration: 2s;
+};
+
+::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
+};
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5500;
+};
+
+// nav bar // 
+.top-nav-bar {
+    display: flex; 
+    border: 1px solid white;
+
+    height: 5.5%;
+    width: 99%;
+
+    position: fixed;
+    top: 0;
+    left: 0.5%;
+};
+
+// song progress bar // 
+.song-progress-bar {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 9%; 
+    width: 98%; 
+
+    position: fixed; 
+    bottom: 0; 
+    left: 1%;
+};
+
+// side bar // 
+.song-index-side-bar-container {
+    display: flex; 
+
+    height: 100%; 
+    width: 31%; 
+
+    position: absolute;
+    right: 0;
+
     align-items: center;
     justify-content: center;
 
+    // border: 1px solid red; 
 };
+
+.song-index-side-bar {
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid white; 
+
+    height: 80%; 
+    width: 100%;
+
+    position: relative; 
+    right: 0; 
+
+    // justify-content: center;
+    align-items: center;
+};
+
+// stats bar // 
+.stats-bar-container {
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid white; 
+
+    height: 180px; 
+    width: 85%;
+
+    position: relative; 
+    top: 2%;
+};
+
+.stats-bar-label {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 15%; 
+    width: 100%; 
+
+    position: relative;
+};
+
+.stats-bar-logo {
+    border: 1px solid white;
+    height: 80%; 
+    width: 7.5%; 
+
+    position: absolute; 
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+};
+
+.stats-bar-title {
+    border: 1px solid white;
+    height: 80%; 
+    width: 25%; 
+
+    position: absolute; 
+    margin-left: 10%;
+    margin-top: 0.5%;
+};
+
+.number-stat-container {
+    display: flex; 
+    border: 1px solid white; 
+
+    align-items: center;
+    
+    height: 50%;
+    width: 100%;
+}
+
+.twenty-four-hour-stat-container {
+    display: flex;
+    border: 1px solid white;
+
+    height: 80%;
+    width: 48%;
+
+    position: relative;
+    left: 1%;
+};  
+
+.seven-day-stat-container {
+    display: flex;
+    border: 1px solid white;
+
+    height: 80%;
+    width: 48%;
+
+    position: relative;
+    left: 2%;
+};  
+
+.stats-bottom-text-container {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 15%;
+    width: 100%;
+
+    position: relative;
+    top: 5%;
+};
+
+// who to follow // 
+.who-to-follow-container {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 180px; 
+    width: 85%;
+
+    margin-top: 100px;
+};
+
+// animations //

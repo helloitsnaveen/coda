@@ -200,6 +200,17 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: #ff5500;
 };
 
+.session-form-errors {
+    font-family: 'Spartan'; 
+    color: white; 
+    font-size: 15px;
+    position: relative;
+    left: 45%;
+    bottom: 7.5%;
+
+    // animation: basic_fade 1s forwards;
+}
+
 // animations 
 
 @keyframes basic_fade {

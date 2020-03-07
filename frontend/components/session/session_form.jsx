@@ -27,6 +27,10 @@ class SessionForm extends React.Component {
         });
     }
 
+    componentDidMount() {
+        this.props.clearErrors()
+    };
+
     render() {
         return (
             <div className="session-form-div">
@@ -95,6 +99,8 @@ class SessionForm extends React.Component {
                      : null}
                     <br/>
                     <button className="session-form-button" value={this.props.buttonName}>{this.props.buttonName}</button>
+
+                    <p className='session-form-errors'>{this.props.errors.session[0]}</p>
                 </form>
 
                 {this.props.formType === 'login' ?

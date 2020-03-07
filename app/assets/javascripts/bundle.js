@@ -90,7 +90,7 @@
 /*!*********************************************!*\
   !*** ./frontend/actions/session_actions.js ***!
   \*********************************************/
-/*! exports provided: RECEIEVE_CURRENT_USER, LOGOUT_CURRENT_USER, RECEIEVE_SESSION_ERRORS, login, logout, signup */
+/*! exports provided: RECEIEVE_CURRENT_USER, LOGOUT_CURRENT_USER, RECEIEVE_SESSION_ERRORS, receieveErrors, login, logout, signup */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98,6 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECEIEVE_CURRENT_USER", function() { return RECEIEVE_CURRENT_USER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOGOUT_CURRENT_USER", function() { return LOGOUT_CURRENT_USER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECEIEVE_SESSION_ERRORS", function() { return RECEIEVE_SESSION_ERRORS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "receieveErrors", function() { return receieveErrors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "signup", function() { return signup; });
@@ -126,7 +127,6 @@ var receieveErrors = function receieveErrors(errors) {
     errors: errors
   };
 }; // async action creators 
-
 
 var login = function login(user) {
   return function (dispatch) {
@@ -579,6 +579,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
     processForm: function processForm(user) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["login"])(user));
+    },
+    clearErrors: function clearErrors() {
+      return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["receieveErrors"])([]));
     }
   };
 };
@@ -658,6 +661,11 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       };
     }
   }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.clearErrors();
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -727,7 +735,9 @@ var SessionForm = /*#__PURE__*/function (_React$Component) {
       })) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "session-form-button",
         value: this.props.buttonName
-      }, this.props.buttonName)), this.props.formType === 'login' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, this.props.buttonName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "session-form-errors"
+      }, this.props.errors.session[0])), this.props.formType === 'login' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: loginImage,
         className: "login-image"
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -786,6 +796,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
     processForm: function processForm(user) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["signup"])(user));
+    },
+    clearErrors: function clearErrors() {
+      return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_3__["receieveErrors"])([]));
     }
   };
 };
@@ -851,24 +864,42 @@ var SongIndex = /*#__PURE__*/function (_React$Component) {
           songs = _this$props.songs,
           deleteSong = _this$props.deleteSong;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "entire-song-index-div"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "top-nav-bar"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-index-div"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        exact: true,
-        to: "/",
-        className: "App-main-title"
-      }, "coda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "App-main-tagline"
-      }, "music by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "App-tagline-you"
-      }, "you"), ", for ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "App-tagline-you"
-      }, "you"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, songs.map(function (song) {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, songs.map(function (song) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_song_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
           song: song,
           deleteSong: deleteSong,
           key: song.id
         });
-      })));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "song-index-side-bar-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "song-index-side-bar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "stats-bar-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "stats-bar-label"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "stats-bar-logo"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "stats-bar-title"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "number-stat-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "twenty-four-hour-stat-container"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "seven-day-stat-container"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "stats-bottom-text-container"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "who-to-follow-container"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "song-progress-bar"
+      }));
     }
   }]);
 
