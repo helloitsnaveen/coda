@@ -84,7 +84,7 @@
     display: flex; 
 
     height: 100%; 
-    width: 31%; 
+    width: 25%; 
 
     position: absolute;
     right: 0;
@@ -108,6 +108,7 @@
 
     // justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 };
 
 // stats bar // 
@@ -135,12 +136,12 @@
 
 .stats-bar-logo {
     border: 1px solid white;
-    height: 80%; 
+    height: 80%;
     width: 7.5%; 
 
-    position: absolute; 
-    margin-left: 0.5%;
-    margin-top: 0.5%;
+    position: relative; 
+    top: 7%;
+    left: 0.5%;
 };
 
 .stats-bar-title {
@@ -148,9 +149,9 @@
     height: 80%; 
     width: 25%; 
 
-    position: absolute; 
-    margin-left: 10%;
-    margin-top: 0.5%;
+    position: relative;
+    top: 7%;
+    left: 2%;
 };
 
 .number-stat-container {
@@ -193,18 +194,251 @@
     width: 100%;
 
     position: relative;
-    top: 5%;
+    top: 9%;
 };
 
 // who to follow // 
 .who-to-follow-container {
     display: flex; 
+    flex-direction: column;
     border: 1px solid white; 
 
-    height: 180px; 
+    height: 300px; 
     width: 85%;
-
-    margin-top: 100px;
 };
+
+.who-to-follow-label {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 10%; 
+    width: 100%;
+};
+
+.who-to-follow-logo {
+    border: 1px solid white;
+    height: 80%;
+    width: 7.5%; 
+
+    position: relative; 
+    top: 7%;
+    left: 0.5%;
+};
+
+.who-to-follow-title {
+    border: 1px solid white;
+    height: 80%; 
+    width: 25%; 
+
+    position: relative;
+    top: 7%;
+    left: 2%;
+};
+
+.who-to-follow-users-container {
+    display: flex; 
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    border: 1px solid red; 
+    width: 100%; 
+    height: 90%;
+};
+
+.who-to-follow-user1, .who-to-follow-user2, .who-to-follow-user3 {
+    border: 1px solid white; 
+
+    width: 100%; 
+    height: 25%;
+
+    display: flex; 
+    align-items: center;
+};
+
+.who-to-follow-user1-image, .who-to-follow-user2-image, .who-to-follow-user3-image {
+    border: 1px solid white; 
+
+    height: 50px; 
+    width: 50px;
+
+    border-radius: 100%;
+    position: relative; 
+    left: 2%;
+};
+
+.who-to-follow-user1-user, .who-to-follow-user2-user, .who-to-follow-user3-user {
+    border: 1px solid white; 
+
+    height: 30px; 
+    width: 100px; 
+
+    position: relative;
+    left: 5%;
+};
+
+.who-to-follow-user1-followers, .who-to-follow-user2-followers, .who-to-follow-user3-followers {
+    border: 1px solid white; 
+
+    height: 15px; 
+    width: 50px; 
+
+    position: relative; 
+    left: 10%;
+};
+
+.who-to-follow-user1-followbtn, .who-to-follow-user2-followbtn, .who-to-follow-user3-followbtn {
+    border: 1px solid white; 
+
+    height: 30px; 
+    width: 30px; 
+
+    position: relative; 
+    left: 35%;
+};
+
+.index-likes-container {
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid white; 
+
+    height: 300px; 
+    width: 85%;
+};
+
+.index-likes-label {
+    display: flex; 
+    border: 1px solid white; 
+
+    height: 10%; 
+    width: 100%;
+};
+
+.index-likes-logo {
+    border: 1px solid white;
+    height: 80%;
+    width: 7.5%; 
+
+    position: relative; 
+    top: 7%;
+    left: 0.5%;
+};
+
+.index-likes-title {
+    border: 1px solid white;
+    height: 80%; 
+    width: 25%; 
+
+    position: relative;
+    top: 7%;
+    left: 2%;
+};
+
+.index-likes-tracks-container {
+    display: flex; 
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    border: 1px solid red; 
+    width: 100%; 
+    height: 90%;
+};
+
+.index-likes-track-1, .index-likes-track-2, .index-likes-track-3 {
+    border: 1px solid white; 
+
+    width: 100%; 
+    height: 25%;
+
+    display: flex; 
+    align-items: center;
+};
+
+
+.index-likes-track-1-image, .index-likes-track-2-image, .index-likes-track-3-image {
+    border: 1px solid white; 
+    
+    height: 50px; 
+    width: 50px;
+    
+    position: relative; 
+    left: 2%;
+};
+
+.index-likes-text-1, .index-likes-text-2, .index-likes-text-3 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+};
+
+.index-likes-track-1-user, .index-likes-track-2-user, .index-likes-track-3-user {
+    border: 1px solid white; 
+
+    height: 10px; 
+    width: 90px; 
+
+    position: relative;
+    left: 5%;
+    bottom: 5%;
+};
+
+.index-likes-track-1-title, .index-likes-track-2-title, .index-likes-track-3-title {
+    border: 1px solid white; 
+
+    height: 20px; 
+    width: 180px; 
+
+    position: relative;
+    left: 5%;
+};
+
+.index-likes-track-1-stats, .index-likes-track-2-stats, .index-likes-track-3-stats {
+    border: 1px solid white; 
+
+    height: 15px; 
+    width: 250px; 
+
+    position: relative;
+    left: 5%;
+    bottom: 5%;    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+};
+
+.index-likes-track-1-stats-plays, .index-likes-track-2-stats-plays, .index-likes-track-3-stats-plays {
+    border: 1px solid white;
+    height: 80%; 
+    width: 22%; 
+
+    position: relative; 
+}; 
+
+.index-likes-track-1-stats-likes, .index-likes-track-2-stats-likes, .index-likes-track-3-stats-likes {
+    border: 1px solid white;
+    height: 80%; 
+    width: 22%; 
+
+    position: relative; 
+}; 
+
+.index-likes-track-1-stats-comments, .index-likes-track-2-stats-comments, .index-likes-track-3-stats-comments {
+    border: 1px solid white;
+    height: 80%; 
+    width: 22%; 
+
+    position: relative; 
+}; 
+
+.index-likes-track-1-stats-follows, .index-likes-track-2-stats-follows, .index-likes-track-3-stats-follows {
+    border: 1px solid white;
+    height: 80%; 
+    width: 22%; 
+
+    position: relative; 
+}; 
 
 // animations //
