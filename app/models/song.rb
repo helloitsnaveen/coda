@@ -1,8 +1,8 @@
 class Song < ApplicationRecord
 
     ### ACTIVE STORAGE ### 
-    has_one_attached :track 
     has_one_attached :image
+    has_one_attached :track 
 
     ### MVP2 SONGS ###
     validates :title, :description, :artist_id, presence: true

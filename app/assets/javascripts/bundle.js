@@ -863,6 +863,7 @@ var SongIndex = /*#__PURE__*/function (_React$Component) {
       var _this$props = this.props,
           songs = _this$props.songs,
           deleteSong = _this$props.deleteSong;
+      console.log(this.props);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "entire-song-index-div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1122,8 +1123,9 @@ __webpack_require__.r(__webpack_exports__);
 var SongIndexItem = function SongIndexItem(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "song-index-item-outer-div"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "song-index-item-image"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "song-index-OUTER-image-tag",
+    src: props.song.image
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "song-index-item-rest"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1132,11 +1134,17 @@ var SongIndexItem = function SongIndexItem(props) {
     className: "song-index-item-duration-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "song-index-item-duration"
-  }, "3min 32sec")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "2:43")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "song-index-item-title-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
     className: "song-index-item-title"
-  }, props.song.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, props.song.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "song-index-item-artist-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    className: "song-index-item-artist"
+  }, "naveen thota"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "song-index-item-like-and-play"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "song-index-item-like-container"

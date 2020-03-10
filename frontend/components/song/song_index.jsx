@@ -15,6 +15,7 @@ class SongIndex extends React.Component {
 
     render() {
         const { songs, deleteSong } = this.props; 
+        console.log(this.props);
 
         return (
             <div className='entire-song-index-div'>
