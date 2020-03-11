@@ -18,11 +18,11 @@ const SongIndexItem = props => (
                     </div>
                     
                     <div className='song-index-item-title-container'>
-                        <a href='' className='song-index-item-title'>{props.song.title}</a>
+                        <Link exact to={`/songs/${props.songId}`} className='song-index-item-title'>{props.song.title}</Link>
                     </div>
 
                     <div className='song-index-item-artist-container'>
-                        <a href="" className='song-index-item-artist'>naveen thota</a>
+                        <Link exact to='/' className='song-index-item-artist'>naveen thota</Link>
                     </div>
                 </div>
 
