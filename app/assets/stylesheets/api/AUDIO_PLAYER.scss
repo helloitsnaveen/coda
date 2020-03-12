@@ -1,0 +1,106 @@
+.AP-MUSIC-PLAYER-DIV {
+    display: flex; 
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid #121212; 
+    border-radius: 6px;
+    
+    height: 9%; 
+    width: 100%; 
+    
+    position: fixed; 
+    bottom: 0; 
+
+    background-color: #121212;
+    transition-duration: 0.4s;
+};
+
+
+.BORDER0 {
+    border: 2px solid black; 
+    border-radius: 3px;
+    
+    height: 80%;
+    width: 99.5%;
+    
+    transition-duration: 2s;
+
+    display: flex;
+    align-items: center;
+};
+
+.AP-MUSIC-PLAYER-DIV:hover .BORDER0 {
+    border: 2px solid #ff5500
+};
+
+.inBORDER0 {
+    height: 100%;
+    width: 100%;
+
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+
+    // border: 1px solid white;
+};
+
+.AP-play-container {
+    // border: 1px solid white; 
+
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    left: 7%;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+};
+
+.AP-PLAY-ICON {
+    height: 40px; 
+    width: 40px;
+
+    color: white;
+};
+
+.AP-show-container {
+    // border: 1px solid white; 
+
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    right: 7%;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 0.8s;
+
+    // background-color: black;
+};
+
+.AP-show-container:hover .AP-SHOW-ICON {
+    color: #ff5500;
+};
+
+.AP-SHOW-ICON {
+    height: 30px; 
+    width: 30px;
+
+    color: white;
+
+    transition-duration: 0.6s;
+};
+
+.AP-PROGRESS-BAR {
+    border: 1px solid white; 
+    height: 2px; 
+    width: 78%
+};
