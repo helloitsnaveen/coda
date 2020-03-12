@@ -33,6 +33,7 @@ class SongIndex extends React.Component {
                                     songId={song.id}
                                     key={song.id}
                                     className='anbba'
+                                    
                                 />
                             ))
                         }

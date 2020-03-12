@@ -20,7 +20,7 @@ class SongShow extends React.Component {
         
     render() {
         const id = this.props.songs.length === 1 ? 0 : this.props.match.params.songId
-        // console.log(id);
+        // console.log(this.props.song);
         const title = this.props.song ? this.props.song.title : ""
         // const title = this.props.songs[id].title;
         const image = this.props.song ? this.props.song.image : ""
