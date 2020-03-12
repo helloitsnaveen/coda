@@ -24,10 +24,11 @@ const App = () => (
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
 
             <ProtectedRoute exact path="/stream" component={SongIndexContainer} />
-            <ProtectedRoute exact path="/stream" component={AudioFormContainer} />
             
             <Route exact path="/songs/:songId" component={SongShowContainer} />
-            <Route exact path="/songs/:songId" component={AudioFormContainer} />
+            {/* <Route exact path="/songs/:songId" component={AudioFormContainer} /> */}
+
+            <ProtectedRoute path="/" component={AudioFormContainer} />
 
             <ProtectedRoute exact path="/upload" component={SongFormContainer} />
         {/* </Switch> */}
