@@ -1,6 +1,8 @@
 .entire-song-index-div {
     display: flex;
     position: relative;
+    
+    animation: basic_fade 3s forwards;
 };
 
 // just song index //
@@ -11,9 +13,10 @@
     transform:scale(0.8);
 
     position: relative;
-    right: 2%;
+    right: 7%;
+    // right: 2%;
 
-    border: 1px solid white;
+    // border: 1px solid white;
 };
 
 .song-index-visual-divs-container {
@@ -87,7 +90,7 @@
     width: 25%; 
 
     position: absolute;
-    right: 0;
+    right: 1%;
 
     align-items: center;
     justify-content: center;
@@ -98,7 +101,7 @@
 .song-index-side-bar {
     display: flex; 
     flex-direction: column;
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 80%; 
     width: 100%;
@@ -108,115 +111,231 @@
 
     // justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    // justify-content: space-between;
 };
 
 // stats bar // 
 .stats-bar-container {
     display: flex; 
     flex-direction: column;
-    border: 1px solid white; 
+    // border: 2px solid #101010; 
+    border: 2px solid lightgrey;
 
     height: 180px; 
     width: 85%;
 
     position: relative; 
     top: 2%;
+
+    background-color: #101010;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+
+    transition-duration: 0.6s;
+    // animation: basic_fade 1s forwards;
+};
+
+.stats-bar-container:hover .stats-bar-label {
+    color: white
+};
+
+.stats-bar-container:hover .stats-bottom-text-container {
+    color: white
+};
+
+.stats-bar-container:hover .stats-bar-logo {
+    color: white
+};
+
+.stats-bar-container:hover {
+    border: 2px solid #ff5500; 
 };
 
 .stats-bar-label {
     display: flex; 
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 15%; 
     width: 100%; 
 
     position: relative;
+
+    color: #ff5500;
+    transition-duration: 0.6s;
 };
 
 .stats-bar-logo {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%;
     width: 7.5%; 
 
     position: relative; 
     top: 7%;
     left: 0.5%;
+    color: #ff5500;
+    transition-duration: 0.6s;
 };
 
 .stats-bar-title {
-    border: 1px solid white;
+    // border: 1px solid white;
+    font-family: 'Josefin Sans';
+    font-size: 25px;
     height: 80%; 
     width: 25%; 
 
     position: relative;
-    top: 7%;
+    top: 9%;
     left: 2%;
 };
 
 .number-stat-container {
     display: flex; 
-    border: 1px solid white; 
+    position: relative;
+    top: 8%;
+    // border: 1px solid #ff5500; 
 
     align-items: center;
     
     height: 50%;
     width: 100%;
-}
+};
+
+.twenty-four-hour-text {
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    position: absolute;
+    right: 1%;
+    // top: 3%;
+    bottom: 1%;
+};
+
+.twenty-four-hour-total-num {
+    font-family: 'Josefin Sans';
+    font-size: 45px; 
+    font-style: bold;
+    position: absolute;
+    top: 4%; 
+    left: 1.5%;
+};
+
+.seven-day-total-num {
+    font-family: 'Josefin Sans';
+    font-size: 45px; 
+    font-style: bold;
+    position: absolute;
+    top: 4%;
+    left: 1.5%;
+};
+
+.seven-day-text {
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    position: absolute;
+    right: 1%;
+    // top: 3%;
+    bottom: 1%;
+};
+
 
 .twenty-four-hour-stat-container {
     display: flex;
-    border: 1px solid white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
 
     height: 80%;
     width: 48%;
 
     position: relative;
     left: 1%;
+
+    background-color: #1a1a1a;
 };  
 
 .seven-day-stat-container {
     display: flex;
-    border: 1px solid white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
 
     height: 80%;
     width: 48%;
 
     position: relative;
     left: 2%;
+
+    background-color: #1a1a1a;
 };  
 
 .stats-bottom-text-container {
     display: flex; 
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 15%;
     width: 100%;
 
     position: relative;
-    top: 9%;
+    top: 21%;
+    transition-duration: 0.6s;
+    color: #ff5500;
+};
+
+
+.index-side-plays {
+    position: absolute;
+    top: 20%;
+    left: 0.4%;
+    height: 15px; 
+    width: 15px;
+};
+
+.stats-bottom-total-plays {
+    font-family: 'Josefin Sans';
+    position: absolute;
+    top: 22%; 
+    left: 6%;
 };
 
 // who to follow // 
 .who-to-follow-container {
     display: flex; 
     flex-direction: column;
-    border: 1px solid white; 
+    border: 2px solid lightgray; 
 
     height: 300px; 
     width: 85%;
+
+
+
+    background-color: #101010;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    
+    transition-duration: 0.6s;
+};
+
+.who-to-follow-container:hover {
+    border: 2px solid #ff5500;
+};
+
+.who-to-follow-container:hover .who-to-follow-title {
+    color: white;
+};
+
+.who-to-follow-container:hover .who-to-follow-logo-svg {
+    color: white;
 };
 
 .who-to-follow-label {
     display: flex; 
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 10%; 
     width: 100%;
 };
 
 .who-to-follow-logo {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%;
     width: 7.5%; 
 
@@ -225,14 +344,24 @@
     left: 0.5%;
 };
 
+.who-to-follow-logo-svg {
+    color: #ff5500;
+    transition-duration: 0.6s;
+}
+
 .who-to-follow-title {
-    border: 1px solid white;
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    white-space: nowrap;
     height: 80%; 
     width: 25%; 
 
     position: relative;
-    top: 7%;
+    top: 10%;
     left: 2%;
+
+    color: #ff5500;
+    transition-duration: 0.6s;
 };
 
 .who-to-follow-users-container {
@@ -241,19 +370,29 @@
 
     justify-content: space-evenly;
 
-    border: 1px solid red; 
+    // border: 1px solid white; 
     width: 100%; 
     height: 90%;
 };
 
 .who-to-follow-user1, .who-to-follow-user2, .who-to-follow-user3 {
     border: 1px solid white; 
+    border-radius: 3px;
+    transition-duration: 0.6s;
 
     width: 100%; 
     height: 25%;
 
     display: flex; 
     align-items: center;
+};
+
+.who-to-follow-user1:hover, .who-to-follow-user2:hover, .who-to-follow-user3:hover {
+    border: 1px solid #ff5500; 
+};
+
+.who-to-follow-user1:hover .who-to-follow-user1-followbtn, .who-to-follow-user2:hover .who-to-follow-user2-followbtn, .who-to-follow-user3:hover .who-to-follow-user3-followbtn {
+    color: white;
 };
 
 .who-to-follow-user1-image, .who-to-follow-user2-image, .who-to-follow-user3-image {
@@ -267,71 +406,149 @@
     left: 2%;
 };
 
+.FOLLOW-side-plays {
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    bottom: 25%;
+};
+
+.who-follow-plays {
+    white-space: nowrap;
+    font-family: 'Spartan';
+    font-size: 10px;
+    position: absolute;
+    left: 15%;
+    top: 21%;
+};
+
 .who-to-follow-user1-user, .who-to-follow-user2-user, .who-to-follow-user3-user {
-    border: 1px solid white; 
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    // border: 1px solid white; 
 
     height: 30px; 
     width: 100px; 
 
     position: relative;
     left: 5%;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.6s;
+};
+
+.who-to-follow-user1-plays, .who-to-follow-user2-plays, .who-to-follow-user3-plays {
+    // border: 1px solid white; 
+
+    height: 15px; 
+    width: 90px; 
+
+    position: relative; 
+    left: 12%;
+    padding-right: 10px;
+    // bottom: 15%;
 };
 
 .who-to-follow-user1-followers, .who-to-follow-user2-followers, .who-to-follow-user3-followers {
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 15px; 
-    width: 50px; 
+    width: 90px; 
 
     position: relative; 
-    left: 10%;
+    // left: 18%;
+    // bottom: 15%;
 };
+
 
 .who-to-follow-user1-followbtn, .who-to-follow-user2-followbtn, .who-to-follow-user3-followbtn {
-    border: 1px solid white; 
-
-    height: 30px; 
-    width: 30px; 
-
-    position: relative; 
-    left: 35%;
+    // border: 1px solid white; 
+    transition-duration: 0.6s;
+    color: #ff5500;
+    height: 20px; 
+    width: 20px; 
+    
+    position: absolute; 
+    right: 11%;
 };
+
+.who-to-follow-user1-followbtn:focus, .who-to-follow-user2-followbtn:hover, .who-to-follow-user3-followbtn:hover {
+    color: #ff5500;
+};
+
+.FOLLOW-side-follow {
+    position: relative;
+    left: 15%;
+    top: 10%;
+};
+
+// LIKES 
 
 .index-likes-container {
     display: flex; 
     flex-direction: column;
-    border: 1px solid white; 
+    border: 2px solid lightgray; 
 
     height: 300px; 
     width: 85%;
+
+    background-color: #101010;
+    padding: 15px;
+    border-radius: 5px;
+    // margin-bottom: 80px;
+    
+    transition-duration: 0.6s;
+};
+
+.index-likes-container:hover {
+    border: 2px solid #ff5500;
+};
+
+.index-likes-container:hover .index-likes-title {
+    color: white;
+};
+
+.index-likes-container:hover .index-likes-logo {
+    color: white;
 };
 
 .index-likes-label {
     display: flex; 
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 10%; 
     width: 100%;
 };
 
 .index-likes-logo {
-    border: 1px solid white;
+    color: #ff5500;
+
     height: 80%;
     width: 7.5%; 
 
     position: relative; 
     top: 7%;
     left: 0.5%;
+
+    transition-duration: 0.6s;
 };
 
 .index-likes-title {
-    border: 1px solid white;
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    white-space: nowrap;    
     height: 80%; 
     width: 25%; 
 
     position: relative;
-    top: 7%;
+    top: 10%;
     left: 2%;
+
+    color: #ff5500;
+    transition-duration: 0.6s;
 };
 
 .index-likes-tracks-container {
@@ -340,7 +557,7 @@
 
     justify-content: space-evenly;
 
-    border: 1px solid red; 
+    // border: 1px solid red; 
     width: 100%; 
     height: 90%;
 };
@@ -353,6 +570,24 @@
 
     display: flex; 
     align-items: center;
+    
+    border-radius: 3px;
+    transition-duration: 0.3s;
+
+};
+
+.index-likes-track-1:hover, .index-likes-track-2:hover, .index-likes-track-3:hover {
+    border: 1px solid #ff5500; 
+
+    width: 100%; 
+    height: 25%;
+
+    display: flex; 
+    align-items: center;
+    
+    border-radius: 3px;
+    transition-duration: 0.6s;
+
 };
 
 
@@ -374,7 +609,10 @@
 };
 
 .index-likes-track-1-user, .index-likes-track-2-user, .index-likes-track-3-user {
-    border: 1px solid white; 
+    font-family: 'Josefin Sans';
+    font-size: 11px;    
+    
+    // border: 1px solid white; 
 
     height: 10px; 
     width: 90px; 
@@ -385,17 +623,25 @@
 };
 
 .index-likes-track-1-title, .index-likes-track-2-title, .index-likes-track-3-title {
-    border: 1px solid white; 
+    font-family: 'Josefin Sans';
+    font-size: 19px;    
+    
+    // border: 1px solid white; 
 
     height: 20px; 
     width: 180px; 
 
     position: relative;
     left: 5%;
+    margin-top: 0.4%;
+    // top: 90%;
+
+    color: #ff5500;
+    transition-duration: 0.6s;
 };
 
 .index-likes-track-1-stats, .index-likes-track-2-stats, .index-likes-track-3-stats {
-    border: 1px solid white; 
+    // border: 1px solid white; 
 
     height: 15px; 
     width: 250px; 
@@ -410,35 +656,123 @@
 };
 
 .index-likes-track-1-stats-plays, .index-likes-track-2-stats-plays, .index-likes-track-3-stats-plays {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%; 
     width: 22%; 
 
     position: relative; 
+    right: 2.5%;
+    top: 3%;
 }; 
+
+.index-likes-track-1-stats-plays-icon, .index-likes-track-2-stats-plays-icon, .index-likes-track-3-stats-plays-icon {
+    height: 8px;
+    width: 8px;
+    position: relative;
+    bottom: 22%;
+    margin-left: 2px;
+};
+
+.index-likes-track-1-stats-plays-number, .index-likes-track-2-stats-plays-number, .index-likes-track-3-stats-plays-number {
+    white-space: nowrap;
+    font-family: 'Spartan';
+    font-size: 9px;
+    position: absolute;
+    left: 25%;
+    top: 22%;    
+};
 
 .index-likes-track-1-stats-likes, .index-likes-track-2-stats-likes, .index-likes-track-3-stats-likes {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%; 
     width: 22%; 
 
     position: relative; 
+    right: 8%;
+    top: 4%;
 }; 
+
+.index-likes-track-1-stats-likes-icon, .index-likes-track-2-stats-likes-icon, .index-likes-track-3-stats-likes-icon {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 22%;
+    margin-left: 2px;
+
+};
+
+.index-likes-track-1-stats-likes-number, .index-likes-track-2-stats-likes-number, .index-likes-track-3-stats-likes-number {
+    white-space: nowrap;
+    font-family: 'Spartan';
+    font-size: 9px;
+    position: absolute;
+    left: 25%;
+    top: 22%;    
+    margin-left: 1.5px;
+};
 
 .index-likes-track-1-stats-comments, .index-likes-track-2-stats-comments, .index-likes-track-3-stats-comments {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%; 
     width: 22%; 
 
     position: relative; 
+    right: 16%;
+    top: 4%;
 }; 
+
+.index-likes-track-1-stats-comments-icon, .index-comments-track-2-stats-comments-icon, .index-likes-track-3-stats-likes-icon {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 22%;
+    margin-left: 2px;
+
+};
+
+.index-likes-track-1-stats-comments-number, .index-comments-track-2-stats-comments-number, .index-likes-track-3-stats-likes-number {
+    white-space: nowrap;
+    font-family: 'Spartan';
+    font-size: 9px;
+    position: absolute;
+    left: 25%;
+    top: 22%;    
+    margin-left: 1.5px;
+};
 
 .index-likes-track-1-stats-follows, .index-likes-track-2-stats-follows, .index-likes-track-3-stats-follows {
-    border: 1px solid white;
+    // border: 1px solid white;
     height: 80%; 
     width: 22%; 
 
     position: relative; 
+    right: 28%;
 }; 
 
+.index-likes-track-1-stats-follows-icon, .index-follows-track-2-stats-follows-icon, .index-likes-track-3-stats-likes-icon {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 22%;
+    margin-left: 2px;
+
+};
+
+.index-likes-track-1-stats-follows-number, .index-follows-track-2-stats-follows-number, .index-likes-track-3-stats-likes-number {
+    white-space: nowrap;
+    font-family: 'Spartan';
+    font-size: 9px;
+    position: absolute;
+    left: 25%;
+    top: 22%;    
+    margin-left: 1.5px;
+};
+
 // animations //
+
+@keyframes basic_fade {
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+    0% {translateY: (-10%)}
+    100% {translateY: (0%)}
+};

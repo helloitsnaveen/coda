@@ -7,4 +7,6 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :songs, only: [:index, :show, :create, :update, :destroy]
   end 
+
+  
 end

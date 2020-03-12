@@ -4,16 +4,25 @@ import { Link } from 'react-router-dom';
 const SongIndexItem = props => (
     <li>
         <div className='song-index-item-outer-div'>
-            <div className='song-index-item-image'></div>
+            <img className='song-index-OUTER-image-tag' src={props.song.image} />
+
+
+            {/* <div className='song-index-item-image'>
+                <img className='song-index-image-tag' src={props.song.image}/>
+            </div> */}
 
             <div className='song-index-item-rest'>
                 <div className='song-index-item-title-and-duration'>
                     <div className='song-index-item-duration-container'>
-                        <h3 className='song-index-item-duration'>3min 32sec</h3>
+                        <h3 className='song-index-item-duration'>2:43</h3>
                     </div>
                     
                     <div className='song-index-item-title-container'>
-                        <h3 className='song-index-item-title'>{props.song.title}</h3>
+                        <Link exact to={`/songs/${props.songId}`} className='song-index-item-title'>{props.song.title}</Link>
+                    </div>
+
+                    <div className='song-index-item-artist-container'>
+                        <Link exact to='/' className='song-index-item-artist'>naveen thota</Link>
                     </div>
                 </div>
 
