@@ -3,3 +3,4 @@ json.array! @songs.each do |song|
     json.image url_for(song.image)
     json.track url_for(song.track)
 end 
+

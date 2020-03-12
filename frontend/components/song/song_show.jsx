@@ -10,7 +10,8 @@ class SongShow extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        this.props.showSong(this.props.match.params.songId); 
+        this.props.indexSongs()
+        // this.props.showSong(this.props.match.params.songId); 
     };
     
     // componentDidUpdate() {
@@ -19,8 +20,10 @@ class SongShow extends React.Component {
         
     render() {
         const id = this.props.songs.length === 1 ? 0 : this.props.match.params.songId
-        const title = this.props.song ? this.props.songs[id].title : ""
-        const image = this.props.song ? this.props.songs[id].image : ""
+        // console.log(id);
+        const title = this.props.song ? this.props.song.title : ""
+        // const title = this.props.songs[id].title;
+        const image = this.props.song ? this.props.song.image : ""
         
         
         // console.log(title);

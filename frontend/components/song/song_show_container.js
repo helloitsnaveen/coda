@@ -5,7 +5,7 @@ import { indexSongs, updateSong, deleteSong, showSong } from "../../actions/song
 
 const mapStateToProps = (state, ownProps) => ({
     songs: Object.values(state.entities.songs),
-    song: Object.values(state.entities.songs)[ownProps.match.params.songId],
+    song: Object.values(state.entities.songs)[ownProps.match.params.songId - 1],
     // songId: 
     // song: Object.values(state.entities.song)
     // songId: 

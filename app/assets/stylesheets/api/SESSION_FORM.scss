@@ -115,7 +115,7 @@
     animation: basic_fade 1s forwards;
 }; 
 
-input[type=text], input[type=password] {
+.session-username-input, .session-password-input, .session-email-input {
     display: inline-block;
 
     width: 100%;
@@ -129,7 +129,7 @@ input[type=text], input[type=password] {
     animation: basic_fade 1s forwards;
 }; 
 
-input[type=text]:focus, input[type=password]:focus {
+.session-username-input:focus, .session-password-input:focus, .session-email-input:focus {
     border: 2px solid #ff5500;
 };
 
