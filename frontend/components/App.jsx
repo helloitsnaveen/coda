@@ -1,7 +1,8 @@
 import React from "react";
 import {
     Route, 
-    Switch
+    Switch, 
+    Redirect
 } from 'react-router-dom';
 
 import GreetingContainer from "./greeting/greeting_container";
@@ -16,7 +17,7 @@ import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 const App = () => (
     <div className='App-main-div'>
-        <Switch> 
+        {/* <Switch>  */}
             <Route exact path="/" component={GreetingContainer} />
 
             <AuthRoute exact path="/login" component={LoginFormContainer} />
@@ -29,7 +30,7 @@ const App = () => (
             <Route exact path="/songs/:songId" component={AudioFormContainer} />
 
             <ProtectedRoute exact path="/upload" component={SongFormContainer} />
-        </Switch>
+        {/* </Switch> */}
     </div>
 );
 

@@ -410,7 +410,7 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "App-main-div"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
     component: _greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -442,7 +442,7 @@ var App = function App() {
     exact: true,
     path: "/upload",
     component: _create_song_form_create_song_form_container__WEBPACK_IMPORTED_MODULE_7__["default"]
-  })));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -496,19 +496,7 @@ var AudioPlayer = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {}
   }, {
     key: "componentDidUpdate",
-    value: function componentDidUpdate() {// const audioTag = this.props.currentSong ? 
-      //     <audio
-      //         className='songplayer'
-      //         controls
-      //         autoplay
-      //         src={this.props.currentSong.track}
-      //     />
-      //     // this.props.currentSong[0].title
-      // : 
-      //     null
-      // ;
-      // console.log(audioTag);
-    }
+    value: function componentDidUpdate() {}
   }, {
     key: "render",
     value: function render() {
@@ -517,8 +505,7 @@ var AudioPlayer = /*#__PURE__*/function (_React$Component) {
         controls: true,
         autoPlay: true,
         src: this.props.currentSong.track
-      }) // this.props.currentSong[0].title
-      : null;
+      }) : null;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "AP-MUSIC-PLAYER-DIV"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

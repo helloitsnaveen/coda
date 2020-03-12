@@ -11,19 +11,7 @@ class AudioPlayer extends React.Component {
     };
 
     componentDidUpdate() {
-        // const audioTag = this.props.currentSong ? 
-        //     <audio
-        //         className='songplayer'
-        //         controls
-        //         autoplay
-        //         src={this.props.currentSong.track}
-        //     />
-        //     // this.props.currentSong[0].title
-        // : 
-        //     null
-        // ;
 
-        // console.log(audioTag);
     };
     
     render() {
@@ -34,7 +22,6 @@ class AudioPlayer extends React.Component {
                 autoPlay
                 src={this.props.currentSong.track}
             />
-            // this.props.currentSong[0].title
             :
             null
         ;

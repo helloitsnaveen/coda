@@ -19,8 +19,8 @@
 
 
 .BORDER0 {
-    border: 2px solid black; 
-    border-radius: 3px;
+    border: 2px solid #121212; 
+    border-radius: 20px;
     
     height: 80%;
     width: 99.5%;
@@ -32,7 +32,8 @@
 };
 
 .AP-MUSIC-PLAYER-DIV:hover .BORDER0 {
-    border: 2px solid #ff5500
+    border: 2px solid #ff5500;
+    border-radius: 40px;
 };
 
 .inBORDER0 {
@@ -43,8 +44,6 @@
     flex-direction: row;
     align-items: center; 
     justify-content: center;
-
-    // border: 1px solid white;
 };
 
 .AP-play-container {
@@ -66,6 +65,8 @@
     width: 40px;
 
     color: white;
+
+    opacity: 0%;
 };
 
 .AP-show-container {
@@ -75,7 +76,8 @@
     width: 50px;
 
     position: absolute;
-    right: 7%;
+    right: 0.5%;
+    top: 19%;
 
     display: flex; 
     align-items: center;
@@ -100,7 +102,27 @@
 };
 
 .AP-PROGRESS-BAR {
-    border: 1px solid white; 
+    // border: 1px solid white; 
     height: 2px; 
-    width: 78%
+    width: 78%;
+
+    // position: relative;
+    // left: 0;
+
+    // opacity: 0%;
+};
+
+.songplayer {
+    width: 90%; 
+    position: absolute; 
+    left: 0.5%; 
+    top: 18%;
+    opacity: 40%;
+    transition-duration: 1s;
+
+    outline: none;
+};
+
+.songplayer:hover {
+    opacity: 80%;
 };
