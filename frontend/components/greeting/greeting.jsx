@@ -39,11 +39,12 @@ const Greeting = props => {
 
     const demoUserLogin = () => {
         const demoUser = {
-            username: 'demoUser',
-            password: 'demouserpw'
+            username: 'almostwhere',
+            password: 'almostwherepw'
         };
 
-        props.login(demoUser);
+        props.login(demoUser)
+            .then
     };
 
     return props.currentUser ? userGreeting() : sessionLinks();

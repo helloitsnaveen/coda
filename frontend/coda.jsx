@@ -37,23 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     // testing //
-    window.getState = store.getState
-    window.dispatch = store.dispatch
+    // window.getState = store.getState
+    // window.dispatch = store.dispatch
     
-    window.signup = signup;
-    window.login = login;
-    window.logout = logout;
+    // window.signup = signup;
+    // window.login = login;
+    // window.logout = logout;
 
-    window.indexSongs = indexSongs;
-    window.showSong = showSong; 
-    window.createSong = createSong; 
-    window.updateSong = updateSong; 
-    window.deleteSong = deleteSong;
+    // window.indexSongs = indexSongs;
+    // window.showSong = showSong; 
+    // window.createSong = createSong; 
+    // window.updateSong = updateSong; 
+    // window.deleteSong = deleteSong;
 
     const root = document.getElementById("root");
     ReactDOM.render(<Root store={ store } />, root);
-
-
 });
 
 

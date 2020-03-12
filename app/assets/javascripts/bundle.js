@@ -353,18 +353,18 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     store = Object(_store_store__WEBPACK_IMPORTED_MODULE_4__["default"])();
   } // testing //
+  // window.getState = store.getState
+  // window.dispatch = store.dispatch
+  // window.signup = signup;
+  // window.login = login;
+  // window.logout = logout;
+  // window.indexSongs = indexSongs;
+  // window.showSong = showSong; 
+  // window.createSong = createSong; 
+  // window.updateSong = updateSong; 
+  // window.deleteSong = deleteSong;
 
 
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
-  window.signup = _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["signup"];
-  window.login = _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["login"];
-  window.logout = _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["logout"];
-  window.indexSongs = _actions_song_actions__WEBPACK_IMPORTED_MODULE_3__["indexSongs"];
-  window.showSong = _actions_song_actions__WEBPACK_IMPORTED_MODULE_3__["showSong"];
-  window.createSong = _actions_song_actions__WEBPACK_IMPORTED_MODULE_3__["createSong"];
-  window.updateSong = _actions_song_actions__WEBPACK_IMPORTED_MODULE_3__["updateSong"];
-  window.deleteSong = _actions_song_actions__WEBPACK_IMPORTED_MODULE_3__["deleteSong"];
   var root = document.getElementById("root");
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_root__WEBPACK_IMPORTED_MODULE_5__["default"], {
     store: store
@@ -410,17 +410,10 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "App-main-div"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/stream",
-    component: _song_song_index_container__WEBPACK_IMPORTED_MODULE_5__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
-    exact: true,
-    path: "/upload",
-    component: _create_song_form_create_song_form_container__WEBPACK_IMPORTED_MODULE_7__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
     path: "/",
-    component: _audio_player_audio_player_container__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["AuthRoute"], {
     exact: true,
     path: "/login",
@@ -429,15 +422,27 @@ var App = function App() {
     exact: true,
     path: "/signup",
     component: _session_signup_form_container__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
     exact: true,
-    path: "/",
-    component: _greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"]
+    path: "/stream",
+    component: _song_song_index_container__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
+    exact: true,
+    path: "/stream",
+    component: _audio_player_audio_player_container__WEBPACK_IMPORTED_MODULE_8__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/songs/:songId",
     component: _song_song_show_container__WEBPACK_IMPORTED_MODULE_6__["default"]
-  }));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/songs/:songId",
+    component: _audio_player_audio_player_container__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_util_route_util__WEBPACK_IMPORTED_MODULE_9__["ProtectedRoute"], {
+    exact: true,
+    path: "/upload",
+    component: _create_song_form_create_song_form_container__WEBPACK_IMPORTED_MODULE_7__["default"]
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -867,10 +872,10 @@ var Greeting = function Greeting(props) {
 
   var demoUserLogin = function demoUserLogin() {
     var demoUser = {
-      username: 'demoUser',
-      password: 'demouserpw'
+      username: 'almostwhere',
+      password: 'almostwherepw'
     };
-    props.login(demoUser);
+    props.login(demoUser).then;
   };
 
   return props.currentUser ? userGreeting() : sessionLinks();
