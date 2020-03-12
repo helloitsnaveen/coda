@@ -10,7 +10,35 @@ class AudioPlayer extends React.Component {
 
     };
 
+    componentDidUpdate() {
+        // const audioTag = this.props.currentSong ? 
+        //     <audio
+        //         className='songplayer'
+        //         controls
+        //         autoplay
+        //         src={this.props.currentSong.track}
+        //     />
+        //     // this.props.currentSong[0].title
+        // : 
+        //     null
+        // ;
+
+        // console.log(audioTag);
+    };
+    
     render() {
+        const audioTag = this.props.currentSong ?
+            <audio
+                className='songplayer'
+                controls
+                autoPlay
+                src={this.props.currentSong.track}
+            />
+            // this.props.currentSong[0].title
+            :
+            null
+        ;
+
         return (
             <div className='AP-MUSIC-PLAYER-DIV'>
                 <div className='BORDER0'>
@@ -20,7 +48,7 @@ class AudioPlayer extends React.Component {
                         </div>
 
                         <div className='AP-PROGRESS-BAR'>
-
+                            {audioTag}
                         </div>
 
                         <div className='AP-show-container'>

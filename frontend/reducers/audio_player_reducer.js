@@ -4,7 +4,7 @@ const audioPlayerReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_TRACK:
-            return Object.assign({}, state, { 'currentPlay': action.song }); // double check 
+            return action.song
 
         default: 
             return state;

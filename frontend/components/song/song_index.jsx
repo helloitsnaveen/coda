@@ -11,6 +11,8 @@ class SongIndex extends React.Component {
 
     componentDidMount() {
         this.props.indexSongs();
+
+        // console.log(this.props.getTrack(2))
     };
 
     render() {
@@ -33,7 +35,7 @@ class SongIndex extends React.Component {
                                     songId={song.id}
                                     key={song.id}
                                     className='anbba'
-                                    
+                                    getTrack={this.props.getTrack}
                                 />
                             ))
                         }
