@@ -12,6 +12,7 @@ import SongIndexContainer from "./song/song_index_container";
 import SongShowContainer from "./song/song_show_container";
 import SongFormContainer from "./create_song_form/create_song_form_container"
 import AudioFormContainer from "./audio_player/audio_player_container";
+import NavBarContainer from "./nav_bar/nav_bar_container";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
@@ -29,6 +30,7 @@ const App = () => (
             {/* <Route exact path="/songs/:songId" component={AudioFormContainer} /> */}
 
             <ProtectedRoute path="/" component={AudioFormContainer} />
+            <ProtectedRoute path="/" component={NavBarContainer} />
 
             <ProtectedRoute exact path="/upload" component={SongFormContainer} />
         {/* </Switch> */}

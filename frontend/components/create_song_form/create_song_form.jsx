@@ -88,7 +88,7 @@ class CreateSongForm extends React.Component {
                         </div>    
                 </form>
 
-                <div className='signup-visual-div'></div>
+                <div className='login-visual-div'></div>
             </div>
         );
     };
