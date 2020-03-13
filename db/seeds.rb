@@ -15,28 +15,28 @@ mythicaluser0 = User.create!(username: 'GOD', email: 'god@gmail.com', password: 
 
 ## TEST 
 # TEST USERS
-testuser1 = User.create!(username: 'testuser1', email: 'testuser1@gmail.com', password: 'testuser1pw')
-testuser2 = User.create!(username: 'testuser2', email: 'testuser2@gmail.com', password: 'testuser2pw')
+# testuser1 = User.create!(username: 'testuser1', email: 'testuser1@gmail.com', password: 'testuser1pw')
+# testuser2 = User.create!(username: 'testuser2', email: 'testuser2@gmail.com', password: 'testuser2pw')
 
 # TEST SONGS
-testsong1 = Song.create!(title: 'testsong1', description: 'this is the description for testsong1, made by testuser1', artist_id: testuser1.id)
-testsong2 = Song.create!(title: 'testsong2', description: 'this is the description for testsong2, made by testuser2', artist_id: testuser2.id)
+# testsong1 = Song.create!(title: 'testsong1', description: 'this is the description for testsong1, made by testuser1', artist_id: testuser1.id)
+# testsong2 = Song.create!(title: 'testsong2', description: 'this is the description for testsong2, made by testuser2', artist_id: testuser2.id)
 
 # TEST SONGIMAGE LINK 
-testUserIIMAGE = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songImages/TESTUSERIIMAGE.jpg')
-testUserIIIMAGE = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songImages/TESTUSERIIIMAGE.jpg')
+# testUserIIMAGE = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songImages/TESTUSERIIMAGE.jpg')
+# testUserIIIMAGE = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songImages/TESTUSERIIIMAGE.jpg')
 
 # TEST SONGTRACK LINK 
-testUserITRACK = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songTracks/TESTUSERITRACK.wav')
-testUserIITRACK = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songTracks/TESTUSERIITRACK.wav')
+# testUserITRACK = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songTracks/TESTUSERITRACK.wav')
+# testUserIITRACK = open ('/Users/naveen/Documents/MyAdminLabs/CODASEED/songTracks/TESTUSERIITRACK.wav')
 
 # TEST IMAGE ATTACHMENT 
-testsong1.image.attach(io: testUserIIMAGE, filename: 'TESTUSERIIMAGE.jpg')
-testsong2.image.attach(io: testUserIIIMAGE, filename: 'TESTUSERIIIMAGE.jpg')
+# testsong1.image.attach(io: testUserIIMAGE, filename: 'TESTUSERIIMAGE.jpg')
+# testsong2.image.attach(io: testUserIIIMAGE, filename: 'TESTUSERIIIMAGE.jpg')
 
 # TEST TRACK ATTACHMENT 
-testsong1.track.attach(io: testUserITRACK, filename: 'TESTUSERITRACK.wav')
-testsong2.track.attach(io: testUserIITRACK, filename: 'TESTUSERIITRACK.wav')
+# testsong1.track.attach(io: testUserITRACK, filename: 'TESTUSERITRACK.wav')
+# testsong2.track.attach(io: testUserIITRACK, filename: 'TESTUSERIITRACK.wav')
 
 ## SEED 
 # SEED USERS
