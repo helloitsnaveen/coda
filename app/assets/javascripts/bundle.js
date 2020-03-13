@@ -2080,7 +2080,19 @@ var SongShow = /*#__PURE__*/function (_React$Component) {
         alt: ""
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-play-button"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        className: "song-show-play-icon-svg",
+        "aria-hidden": "true",
+        focusable: "false",
+        "data-prefix": "fas",
+        "data-icon": "play",
+        role: "img",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 448 512"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+        fill: "currentColor",
+        d: "M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-text-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-artist-container"
@@ -2180,7 +2192,7 @@ var SongShow = /*#__PURE__*/function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-play-icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        className: "song-show-share-icon-svg",
+        className: "song-show-play-icon",
         "aria-hidden": "true",
         focusable: "false",
         "data-prefix": "fas",
@@ -2198,7 +2210,7 @@ var SongShow = /*#__PURE__*/function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-like-icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        className: "song-show-like-icon-svg",
+        className: "song-show-play-icon",
         "aria-hidden": "true",
         focusable: "false",
         "data-prefix": "fas",
@@ -2216,7 +2228,7 @@ var SongShow = /*#__PURE__*/function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "song-show-share-icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        className: "song-show-share-icon-svg",
+        className: "song-show-play-icon",
         "aria-hidden": "true",
         focusable: "false",
         "data-prefix": "fas",
