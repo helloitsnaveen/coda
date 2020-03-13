@@ -141,14 +141,23 @@
 };
 
 .song-show-wave-form {
-    border: 1px solid white; 
+    border: 2px solid black; 
 
     width: 68.5%;
     height: 30%;
 
     position: absolute;
-    bottom: 8%;
+    bottom: 7%;
     left: 2.5%;
+
+    // padding: 5px;
+    border-radius: 4px;
+
+    transition-duration: 0.7s;
+};
+
+.song-show-wave-form:hover {
+    border: 2px solid #ff5500
 };
 
 .OUTSIDE-SONG-DIV {
@@ -493,3 +502,37 @@
 
     color: #ff5500;
 };
+
+.wave-form {
+    // border: 1px solid white;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+
+    height: 100%;
+    width: 50%;
+    // width: 100%;
+
+    // background-color: transparent;
+
+    // padding-left: 5px;
+};
+
+.wave-form-2 {
+    // border: 1px solid white;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+
+    height: 100%;
+    width: 50%;
+    // width: 100%;
+
+    // background-color: transparent;
+    // padding-right: 5px;
+};
+
