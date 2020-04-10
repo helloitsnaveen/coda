@@ -9,7 +9,7 @@ It was built using the following:
 * **Frontend:** React.js, with Redux
 * **Storage:** Rails Active Storage, used with Amazon S3 hosting
 * **Hosting:** Heroku
-* **Misc:** SCSS, Webpack  
+* **Misc:** SCSS, Webpack   
 
 # Features 
 ### User Authentication 
