@@ -6,7 +6,7 @@
 _**coda**_ is an audio-sharing website inspired by SoundCloud, with a complete redesign. 
 It was built using the following:
 * **Backend:** Ruby on Rails, running on Postgresql database
-* **Frontend:** React.js, with Redux
+* **Frontend:** React.js, with Redux   
 * **Storage:** Rails Active Storage, used with Amazon S3 hosting
 * **Hosting:** Heroku       
 * **Misc:** SCSS, Webpack                 
