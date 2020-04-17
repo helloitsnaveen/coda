@@ -20,7 +20,7 @@ Users may create, and log in to an account - with validations and relevent error
 ### Stream / Index Page
 ![stream](https://github.com/helloitsnaveen/coda/blob/master/readmeImages/STREAMIMAGE.png)  
 
-Immediately after login, users are taken to the stream / song index page. There is a nav bar present, with a home button, upload link and a logout button. The sidebar contains a few containers with music stats, recommended users to follow and the current users liked tracks, all with unique hover animations. 
+Immediately after login, users are taken to the stream / song index page. There is a nav bar present, with a home button, upload link and a logout button. The sidebar contains a few containers with music stats, recommended users to follow and the current users liked tracks, all with unique hover animations.    
 
 ![stream 2](https://github.com/helloitsnaveen/coda/blob/master/readmeImages/STREAM2IMAGE.png)  
 
